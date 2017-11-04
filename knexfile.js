@@ -3,12 +3,11 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
-    connection: {
-      filename: 'postgres://localhost/jlredditclone',
+    client: 'postgresql',
+    connection: 'postgres://localhost/jlredditclone',
     },
   production: {
     client: 'postgresql',
     connection: process.env.DATABASE_URL
   }
-};
+}
