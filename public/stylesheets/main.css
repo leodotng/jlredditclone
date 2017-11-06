@@ -1,12 +1,36 @@
 .divbg {
   background-color: #304349;
   color: #BBF545;
-  font-size: 25px;
+  font-size: 15px;
   text-decoration: none;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+.buttonpadding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 a:link {
     color: #BBF545;
+    text-decoration:  none;
 }
+a:visited {
+  color: #BBF545;
+  text-decoration:  none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #BBF545;
+  text-decoration:  none;
+}
+
+/* selected link */
+a:active {
+  color: #BBF545;
+  text-decoration:  none;
+}
+
 
 /*.parentcontainer {
   display: flex;
