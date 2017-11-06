@@ -1,22 +1,27 @@
 var express = require('express');
-// var bodyParser = require('body-parser');
-
+var app = express();
+var bodyParser = require('body-parser');
 // var routes = require('./routes/index');
+var path = require('path');
 
-const app = express();
+// var handlebars = require('handlebars');
 
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res, next) => {
+  res.render('index');
 
-app.get('/', (req, res) => {
-  res.render('index')
 })
 
+// app.use('/', routes);
 app.listen(3000, (req, res) => {
   console.log('its working')
 })
 
+module.exports = app;
 
-// app.set('views', path.join(__dirname, 'views'));
+
 // app.set('view engine', 'hbs');
 //
 //

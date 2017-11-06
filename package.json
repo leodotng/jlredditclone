@@ -11,8 +11,10 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "handlebars": "^4.0.11",
     "hbs": "^4.0.1",
     "knex": "^0.13.0",
-    "pg": "^7.3.0"
+    "pg": "^7.3.0",
+    "wingcss": "^1.0.0-beta"
   }
 }
